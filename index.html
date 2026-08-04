@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — AstroVedic</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #16181c; }
+    a { color: #7ab8ff; }
+    .lead { background: #21252b; border-color: #3a4048; }
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .6rem; }
+  .updated { color: #6b7280; font-size: .9rem; margin: 0 0 2rem; }
+  .lead {
+    background: #f5f6f8;
+    border: 1px solid #e3e5e9;
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.5rem;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: #1a5fb4; }
+  strong { font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e3e5e9; color: #6b7280; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #3a4048; } }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de AstroVedic</h1>
+<p class="updated">Última actualización: 3 de agosto de 2026</p>
+
+<p>AstroVedic es una aplicación de astrología védica desarrollada por Ramiro Mora Araujo
+(Astrovedic Boy). Esta política explica qué datos usa la app, dónde quedan y qué sale de
+tu teléfono.</p>
+
+<div class="lead">
+  <strong>La versión corta.</strong> Tus datos de nacimiento se guardan <strong>en tu
+  teléfono</strong> y los cálculos se hacen <strong>ahí mismo</strong>. No hay cuenta de
+  usuario, no hay servidor nuestro, y no vendemos ni compartimos tus datos con
+  anunciantes. Hay tres excepciones puntuales, explicadas más abajo sin vueltas.
+</div>
+
+<h2>Qué datos ingresás</h2>
+<p>Para calcular tus momentos favorables, AstroVedic te pide:</p>
+<ul>
+  <li>Un nombre o etiqueta para el perfil.</li>
+  <li>Tu fecha de nacimiento.</li>
+  <li>Tu hora de nacimiento, si la sabés.</li>
+  <li>Tu lugar de nacimiento.</li>
+</ul>
+<p>A partir del lugar, la app deriva las coordenadas y la zona horaria correspondientes.</p>
+
+<h2>Dónde se guardan</h2>
+<p>En tu teléfono, y solo ahí. AstroVedic <strong>no crea una cuenta</strong>, no te pide
+correo ni contraseña, y no sincroniza tus perfiles con ningún servidor nuestro. No
+tenemos forma de ver tus datos.</p>
+<p>La app también guarda en el teléfono los cálculos recientes, para andar rápido y sin
+conexión.</p>
+
+<h2>Qué sale de tu teléfono</h2>
+<p>Tres cosas, y ninguna incluye tu fecha ni tu hora de nacimiento.</p>
+
+<p><strong>1. El lugar que escribís, a OpenStreetMap.</strong> Cuando buscás tu ciudad de
+nacimiento, el texto que escribís se envía al servicio de búsqueda de lugares Nominatim,
+de la OpenStreetMap Foundation, que lo convierte en ciudad, país y coordenadas. Es la
+única forma de ubicar tu lugar de nacimiento en el mapa. Podés leer su política en
+<a href="https://operations.osmfoundation.org/policies/nominatim/">operations.osmfoundation.org/policies/nominatim</a>.</p>
+
+<p><strong>2. Las coordenadas resultantes, a timeapi.io.</strong> Con esas coordenadas, la
+app consulta el servicio timeapi.io para saber qué zona horaria te corresponde. Sin eso,
+los cálculos darían mal. Si el servicio no responde, la app usa la zona horaria de tu
+teléfono.</p>
+
+<p>Las dos consultas ocurren <strong>una sola vez, mientras cargás o cambiás tu lugar de
+nacimiento</strong>. No se repiten después, y ninguna de las dos incluye tu fecha ni tu
+hora de nacimiento, ni tu nombre.</p>
+
+<p><strong>3. Reportes de errores, a Sentry.</strong> Si la app se cierra sola o falla, se
+envía un reporte técnico al servicio Sentry para que podamos arreglarlo. Ese reporte
+incluye el modelo del teléfono, la versión del sistema y dónde falló el código.</p>
+
+<p><strong>No incluye tus datos de nacimiento.</strong> La app filtra explícitamente,
+antes de enviar nada, tu nombre de perfil, fecha, hora y lugar de nacimiento, coordenadas,
+zona horaria y las posiciones astrológicas derivadas. La identificación personal está
+desactivada.</p>
+
+<h2>El calendario de tu teléfono</h2>
+<p>Si elegís guardar un momento favorable en tu calendario, la app te va a pedir permiso
+para escribir en él. Ese evento queda en <strong>tu</strong> calendario, en tu teléfono y
+en los servicios que vos ya tengas configurados. Nosotros no lo vemos ni lo guardamos.</p>
+<p>Podés negar ese permiso y usar el resto de la app con normalidad.</p>
+
+<h2>Qué no hacemos</h2>
+<ul>
+  <li>No vendemos tus datos personales.</li>
+  <li>No mostramos publicidad.</li>
+  <li>No usamos herramientas de analítica ni de seguimiento de comportamiento.</li>
+  <li>No compartimos tus datos con terceros más allá de los tres servicios nombrados
+      arriba, cada uno con la finalidad indicada.</li>
+</ul>
+
+<h2>Cómo borrar tus datos</h2>
+<p>Como todo vive en tu teléfono, tenés dos caminos:</p>
+<ul>
+  <li>Borrar el perfil desde la app, en Ajustes.</li>
+  <li>Desinstalar AstroVedic, lo que elimina todos los perfiles y los cálculos guardados.</li>
+</ul>
+<p>No hace falta que nos escribas para pedirlo, aunque podés hacerlo si tenés dudas.</p>
+
+<h2>Versión de prueba</h2>
+<p>Esta es una versión beta con fecha de vencimiento: al llegar a esa fecha, la app deja
+de funcionar y te avisa. Es a propósito, para que nadie siga usando una versión vieja sin
+saberlo. Tus datos siguen en tu teléfono hasta que los borres o desinstales la app.</p>
+
+<h2>Menores de edad</h2>
+<p>AstroVedic no está dirigida a menores de 13 años y no recopilamos datos de forma
+consciente de ese grupo.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si cambia lo que la app hace con tus datos, actualizamos esta página y la fecha de
+arriba. Si el cambio es importante, además te avisamos dentro de la app.</p>
+
+<h2>Contacto</h2>
+<p>Escribime a <a href="mailto:astrovedicboy@gmail.com">astrovedicboy@gmail.com</a> por
+cualquier duda sobre privacidad, o para pedir que borre información. Contesto yo.</p>
+
+<footer>AstroVedic — Astrovedic Boy</footer>
+
+</body>
+</html>
