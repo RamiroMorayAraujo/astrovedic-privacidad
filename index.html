@@ -40,7 +40,7 @@
 <body>
 
 <h1>Política de privacidad de AstroVedic</h1>
-<p class="updated">Última actualización: 3 de agosto de 2026</p>
+<p class="updated">Última actualización: 5 de agosto de 2026</p>
 
 <p>AstroVedic es una aplicación de astrología védica desarrollada por Ramiro Mora Araujo
 (Astrovedic Boy). Esta política explica qué datos usa la app, dónde quedan y qué sale de
@@ -50,7 +50,9 @@ tu teléfono.</p>
   <strong>La versión corta.</strong> Tus datos de nacimiento se guardan <strong>en tu
   teléfono</strong> y los cálculos se hacen <strong>ahí mismo</strong>. No hay cuenta de
   usuario, no hay servidor nuestro, y no vendemos ni compartimos tus datos con
-  anunciantes. Hay tres excepciones puntuales, explicadas más abajo sin vueltas.
+  anunciantes. La app te pide tu ubicación para calcular los horarios del lugar donde
+  estás, y podés negarla. Todo lo que sale del teléfono está explicado más abajo, sin
+  vueltas.
 </div>
 
 <h2>Qué datos ingresás</h2>
@@ -70,8 +72,20 @@ tenemos forma de ver tus datos.</p>
 <p>La app también guarda en el teléfono los cálculos recientes, para andar rápido y sin
 conexión.</p>
 
+<h2>Tu ubicación</h2>
+<p>Los horarios que ves en AstroVedic —el amanecer, las franjas de cada día— dependen del
+lugar donde estás parado, no de dónde naciste. Por eso la app necesita saber dónde estás.</p>
+
+<p>Si le das permiso, lee tu ubicación con <strong>precisión aproximada</strong>, de unos
+kilómetros, y <strong>solo mientras tenés la app abierta</strong>. Nunca en segundo plano.
+Esas coordenadas se guardan en tu teléfono y se envían a timeapi.io para saber qué zona
+horaria te corresponde.</p>
+
+<p><strong>Podés negar el permiso.</strong> En ese caso la app te pregunta en qué ciudad
+estás y funciona igual. Podés cambiar de opinión cuando quieras desde Perfil.</p>
+
 <h2>Qué sale de tu teléfono</h2>
-<p>Tres cosas, y ninguna incluye tu fecha ni tu hora de nacimiento.</p>
+<p>Cuatro cosas, y ninguna incluye tu fecha ni tu hora de nacimiento.</p>
 
 <p><strong>1. El lugar que escribís, a OpenStreetMap.</strong> Cuando buscás tu ciudad de
 nacimiento, el texto que escribís se envía al servicio de búsqueda de lugares Nominatim,
@@ -79,16 +93,21 @@ de la OpenStreetMap Foundation, que lo convierte en ciudad, país y coordenadas.
 única forma de ubicar tu lugar de nacimiento en el mapa. Podés leer su política en
 <a href="https://operations.osmfoundation.org/policies/nominatim/">operations.osmfoundation.org/policies/nominatim</a>.</p>
 
-<p><strong>2. Las coordenadas resultantes, a timeapi.io.</strong> Con esas coordenadas, la
-app consulta el servicio timeapi.io para saber qué zona horaria te corresponde. Sin eso,
-los cálculos darían mal. Si el servicio no responde, la app usa la zona horaria de tu
-teléfono.</p>
+<p><strong>2. Las coordenadas de tu lugar de nacimiento, a timeapi.io.</strong> Con esas
+coordenadas, la app consulta el servicio timeapi.io para saber qué zona horaria te
+corresponde. Sin eso, los cálculos darían mal. Si el servicio no responde, la app usa la
+zona horaria de tu teléfono.</p>
 
-<p>Las dos consultas ocurren <strong>una sola vez, mientras cargás o cambiás tu lugar de
+<p>Esas dos consultas ocurren <strong>solo cuando cargás o cambiás tu lugar de
 nacimiento</strong>. No se repiten después, y ninguna de las dos incluye tu fecha ni tu
 hora de nacimiento, ni tu nombre.</p>
 
-<p><strong>3. Reportes de errores, a Sentry.</strong> Si la app se cierra sola o falla, se
+<p><strong>3. Las coordenadas de dónde estás ahora, a timeapi.io.</strong> Si activaste la
+ubicación, sus coordenadas se consultan del mismo modo y con la misma finalidad: saber tu
+zona horaria. Ocurre al abrir la app, y solo si te moviste lo suficiente como para que
+cambie el cálculo.</p>
+
+<p><strong>4. Reportes de errores, a Sentry.</strong> Si la app se cierra sola o falla, se
 envía un reporte técnico al servicio Sentry para que podamos arreglarlo. Ese reporte
 incluye el modelo del teléfono, la versión del sistema y dónde falló el código.</p>
 
@@ -113,12 +132,18 @@ en los servicios que vos ya tengas configurados. Nosotros no lo vemos ni lo guar
 </ul>
 
 <h2>Cómo borrar tus datos</h2>
-<p>Como todo vive en tu teléfono, tenés dos caminos:</p>
+<p>AstroVedic no guarda tus datos en ningún servidor: todo vive en tu teléfono. No
+conservamos copias, ni siquiera por un período de retención, porque nunca las tuvimos.</p>
+<p>Para eliminar todo, tenés dos caminos:</p>
 <ul>
-  <li>Borrar el perfil desde la app, en Ajustes.</li>
-  <li>Desinstalar AstroVedic, lo que elimina todos los perfiles y los cálculos guardados.</li>
+  <li>Entrá a Ajustes, abrí tu perfil y borralo.</li>
+  <li>O desinstalá AstroVedic, lo que elimina todos los perfiles, los cálculos guardados y
+      tus preferencias.</li>
 </ul>
-<p>No hace falta que nos escribas para pedirlo, aunque podés hacerlo si tenés dudas.</p>
+<p>Los reportes de errores que hayamos recibido no contienen tus datos de nacimiento y se
+eliminan a los 90 días.</p>
+<p>No hace falta que nos escribas para pedirlo, aunque podés hacerlo si tenés dudas:
+<a href="mailto:astrovedicboy@gmail.com">astrovedicboy@gmail.com</a>.</p>
 
 <h2>Versión de prueba</h2>
 <p>Esta es una versión beta con fecha de vencimiento: al llegar a esa fecha, la app deja
