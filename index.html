@@ -39,7 +39,7 @@
 </head>
 <body>
 <h1>Política de privacidad de AstroVedic</h1>
-<p class="updated">Última actualización: 9 de septiembre de 2026</p>
+<p class="updated">Última actualización: 28 de septiembre de 2026</p>
 
 <p>AstroVedic es una aplicación de astrología védica desarrollada por Ramiro Mora Araujo
 (Astrovedic Boy). Esta política explica qué datos usa la app, dónde quedan y qué sale de
@@ -84,8 +84,8 @@ lugar donde estás parado, no de dónde naciste. Por eso la app necesita saber d
 
 <p>Si le das permiso, lee tu ubicación con <strong>precisión aproximada</strong>, de unos
 kilómetros, y <strong>solo mientras tenés la app abierta</strong>. Nunca en segundo plano.
-Esas coordenadas se guardan en tu teléfono y se envían a timeapi.io para saber qué zona
-horaria te corresponde.</p>
+Esas coordenadas se guardan en tu teléfono. La zona horaria la calcula la app sola, sin
+conexión; esas coordenadas se envían igual a timeapi.io para contrastar ese cálculo.</p>
 
 <p><strong>Podés negar el permiso.</strong> En ese caso la app te pregunta en qué ciudad
 estás y funciona igual. Podés cambiar de opinión cuando quieras desde Perfil.</p>
@@ -93,37 +93,35 @@ estás y funciona igual. Podés cambiar de opinión cuando quieras desde Perfil.
 <h2>Qué sale de tu teléfono</h2>
 <p>Cinco cosas, y ninguna incluye tu fecha ni tu hora de nacimiento.</p>
 
-<p><strong>1. El lugar que escribís, a OpenStreetMap.</strong> Cuando buscás tu ciudad de
-nacimiento, el texto que escribís se envía al servicio de búsqueda de lugares Nominatim,
-de la OpenStreetMap Foundation, que lo convierte en ciudad, país y coordenadas. Es la
-única forma de ubicar tu lugar de nacimiento en el mapa. Podés leer su política en
+<p><strong>1. El lugar que escribís, a OpenStreetMap.</strong> Cuando buscás una ciudad —la de tu nacimiento, o la de dónde estás si la elegís a mano—, el texto que escribís se envía al servicio de búsqueda de lugares Nominatim,
+de la OpenStreetMap Foundation, que lo convierte en ciudad, país y coordenadas. Es la única forma de ubicar ese lugar en el mapa. Podés leer su política en
 <a href="https://operations.osmfoundation.org/policies/nominatim/">operations.osmfoundation.org/policies/nominatim</a>.</p>
 
-<p><strong>2. Las coordenadas de tu lugar de nacimiento, a timeapi.io.</strong> Con esas
-coordenadas, la app consulta el servicio timeapi.io para saber qué zona horaria te
-corresponde. Sin eso, los cálculos darían mal. Si el servicio no responde, la app usa la
-zona horaria de tu teléfono.</p>
+<p><strong>2. Las coordenadas de tu lugar de nacimiento, a timeapi.io.</strong> La zona
+horaria de ese lugar la calcula la app por su cuenta, con un mapa de zonas que lleva
+adentro y sin conexión. Las coordenadas se envían igual a timeapi.io para contrastar ese
+cálculo y detectar errores del mapa. Si el servicio no responde, o responde otra cosa, lo
+que calculó la app no cambia.</p>
 
 <p>Esas dos consultas ocurren <strong>solo cuando cargás o cambiás tu lugar de
 nacimiento</strong>. No se repiten después, y ninguna de las dos incluye tu fecha ni tu
 hora de nacimiento, ni tu nombre.</p>
 
-<p><strong>3. Las coordenadas de dónde estás ahora, a timeapi.io.</strong> Si activaste la
-ubicación, sus coordenadas se consultan del mismo modo y con la misma finalidad: saber tu
-zona horaria. Ocurre al abrir la app, y solo si te moviste lo suficiente como para que
-cambie el cálculo.</p>
+<p><strong>3. Las coordenadas de dónde estás ahora, a timeapi.io.</strong> Si activaste la ubicación, o si elegiste tu ciudad a mano, esas coordenadas se consultan del mismo modo y con la misma finalidad:
+contrastar la zona horaria que la app ya calculó sola. Ocurre al elegir la ciudad o al abrir la app, y en ese caso solo si te moviste lo suficiente como para que cambie el cálculo.</p>
 
 <p><strong>4. Reportes de errores, a Sentry.</strong> Si la app se cierra sola o falla, se
 envía un reporte técnico al servicio Sentry para que podamos arreglarlo. Ese reporte
-incluye el modelo del teléfono, la versión del sistema y dónde falló el código.</p>
+incluye el modelo del teléfono, la versión del sistema y dónde falló el código. También se
+avisa cuando una de esas consultas a timeapi.io falla: ese aviso dice qué falló y cuánto
+tardó, sin coordenadas y sin tu zona horaria.</p>
 
 <p><strong>No incluye tus datos de nacimiento.</strong> La app filtra explícitamente,
 antes de enviar nada, tu nombre de perfil, fecha, hora y lugar de nacimiento, coordenadas,
 zona horaria y las posiciones astrológicas derivadas. La identificación personal está
 desactivada.</p>
 
-<p><strong>5. El estado de la compra, a RevenueCat.</strong> RevenueCat recibe un
-identificador anónimo de instalación y la información necesaria para verificar con Google
+<p><strong>5. El estado de la compra, a RevenueCat.</strong> Desde que abrís la app, aunque no te suscribas, RevenueCat recibe un identificador anónimo de instalación y la información necesaria para verificar con Google
 Play si la suscripción está activa. No recibe tu nombre, tus datos de nacimiento ni los
 datos de tu tarjeta. La app usa esa respuesta únicamente para habilitar o quitar el acceso
 a AstroVedic Personal.</p>
@@ -167,7 +165,7 @@ teléfono. No conservamos copias, ni siquiera por un período de retención, por
 tuvimos.</p>
 <p>Para eliminar todo, tenés dos caminos:</p>
 <ul>
-  <li>Entrá a Ajustes, abrí tu perfil y borralo.</li>
+  <li>En Ajustes, dentro de Tu Perfil, tocá «Eliminar mis datos».</li>
   <li>O desinstalá AstroVedic, lo que elimina todos los perfiles, los cálculos guardados y
       tus preferencias.</li>
 </ul>
